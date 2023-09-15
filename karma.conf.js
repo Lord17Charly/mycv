@@ -41,8 +41,8 @@ module.exports = function (config) {
 	    flags: ['--no-sandbox']
 	 }
        },
-	  singleRun: false,
-    failEmptyTestSuite: false,
+	  singleRun: false,    
+    failOnEmptyTestSuite: false,
     restartOnFileChange: true
   });
 };
