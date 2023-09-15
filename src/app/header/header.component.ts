@@ -10,14 +10,14 @@ import { HeaderService } from '../services/header.service';
 export class HeaderComponent implements OnInit{
   constructor(private headerService : HeaderService) {}
 
-  name: string = "fake name";
-  titulos: string = "Tecnico en Programacion";
-  mision: string = "Poder trabajar y serle de ayuda a la empresa";
-  foto: string = "fake photo";
-  email: string = "yadhirTV@gmail.com";
-  celular: string = "(229) 968 5317";
-  ubicacion: string = "Orizaba, Ver.";
-  redsocial: string = "@yodoeaofi06";
+  name: string = "";
+  titulos: string = "";
+  mision: string = "";
+  foto: string = "";
+  email: string = "";
+  celular: string = "";
+  ubicacion: string = "";
+  redsocial: string = "";
 
   ngOnInit() : void {
     this.headerService.getHeader()
@@ -34,7 +34,6 @@ export class HeaderComponent implements OnInit{
       this.ubicacion = data.ubicacion;
       this.redsocial = data.redsocial;
     })
-    
   }
 }
 
