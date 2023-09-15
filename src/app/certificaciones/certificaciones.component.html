@@ -1,0 +1,11 @@
+<div class="certificaciones-component">
+    <h2 class="component-title">Certificaciones</h2>
+    <div *ngFor="let certificaciones of certificaciones; let i = index" class="certificaciones-item">
+      <div class="certificaciones-title">
+        {{ certificaciones.titulo }} (<span class="certificaciones-year">{{ certificaciones.ano }}</span>)
+      </div>
+      <div class="certificaciones-description">
+        {{ certificaciones.descripcion }}
+      </div>
+    </div>
+  </div>
