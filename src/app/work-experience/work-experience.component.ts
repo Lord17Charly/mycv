@@ -7,14 +7,18 @@ import { WorkExperienceService } from '../services/work-experience.service';
   styleUrls: ['./work-experience.component.css']
 })
 export class WorkExperienceComponent implements OnInit {
-  works: any[] = [];
 
-  constructor(private workExperienceService: WorkExperienceService) { }
+  WorkExperience: any[] = [];
 
-  ngOnInit(): void {
-    this.workExperienceService.getWorkExperience().subscribe((data: any[]) => {
+    constructor(private workexperienceService: WorkExperienceService) {}
+    
+  ngOnInit() : void {
+    this.workexperienceService.getWorkExperience().subscribe((data: any[]) =>  {
       console.log(data);
-      this.works = data;
-    });
-  }
+      alert(data)
+
+      // Asignar los datos al array trabajo
+      this.WorkExperience = data;
+  });
+}
 }
