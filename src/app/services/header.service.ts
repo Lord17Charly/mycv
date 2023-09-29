@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class HeaderService {
 
-  apiURL = 'https://apicv-service-lord17charly.cloud.okteto.net/';
+  apiURL = 'https://apicv-service-lord17charly.cloud.okteto.net/header';
   constructor(private http: HttpClient) { }
 
   httpOptions = {
